@@ -75,6 +75,7 @@ local.properties
 ######################
 .gradle/
 /build/
+out/production/classes/
 
 ######################
 # Package Files
