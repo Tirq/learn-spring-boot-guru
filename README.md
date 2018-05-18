@@ -10,7 +10,6 @@ Finally, to get access from the H2 database console, it was put ```spring.h2.con
 ## Branch 2-mvc-controllers
 In this branch, it was added to the first steps using Thymeleaf to create the first HTML pages: _books_ and _authors_. To manage this pages, it was created the controllers named _BookController_ and _AuthorController_. The controllers are classes annotated with ```@Controller``` and each controller has a method annotated with ```@RequestMapping``` where is specified the name of the action called by request. These methods populate attributes who are sent to in the HTML pages.
 ## Branch 3-dependency-injection
-
 In this branch, it was added some examples of how to use DI (Dependency Injection). It was shown three ways to do this:
 * ```HelloControllerProperty```: using the annotation ```@Autowired``` on the property. 
 * ```HelloControllerSetter```: using the annotation ```@Autowired```  in the setter.
@@ -23,3 +22,5 @@ These three first controllers are using the ```EasyGreetingService``` because it
 The fourth called it was to ```HelloControllerConstructorAndQualifier```, this controller is using the ```@Qualifier("hardGreetingService")``` to say what implementation should be used, different from the others controllers previously created.
 
 Then I have created a controller called ```ProfileController``` to show how the annotation ```@Profile``` can read the _application.properties_ and choose a specific service. The default word was used if the properties doen't specify what profile to use. 
+## Branch 4-jokes-app
+In this branch, it was added a sample controller to print a random quote when the joke we page is visited.   
