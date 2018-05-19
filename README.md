@@ -23,4 +23,6 @@ The fourth called it was to ```HelloControllerConstructorAndQualifier```, this c
 
 Then I have created a controller called ```ProfileController``` to show how the annotation ```@Profile``` can read the _application.properties_ and choose a specific service. The default word was used if the properties doen't specify what profile to use. 
 ## Branch 4-jokes-app
-In this branch, it was added a sample controller to print a random quote when the joke we page is visited.   
+In this branch, it was added a sample controller to print a random quote when the joke we page is visited.
+## Branch 5-spring-config
+In this branch, it was added a type of spring conguration using annotation in the _ChuckNorrisConfig_ class. 
