@@ -1,6 +1,7 @@
 package com.tirq.springbootguru;
 
 import com.tirq.springbootguru.config.FakeData;
+import com.tirq.springbootguru.config.RealData;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,5 +16,7 @@ public class SpringBootGuruApplication {
 
         FakeData fakeData = (FakeData) ctx.getBean(FakeData.class);
         System.out.println(fakeData.getUser() + " from " + fakeData.getCity());
+        RealData realData = (RealData) ctx.getBean(RealData.class);
+        System.out.println(realData.getCountry());
     }
 }
