@@ -26,3 +26,5 @@ Then I have created a controller called ```ProfileController``` to show how the 
 In this branch, it was added a sample controller to print a random quote when the joke we page is visited.
 ## Branch 5-spring-config
 In this branch, it was added a type of spring conguration using annotation in the _ChuckNorrisConfig_ class. 
+## Branch 6-spring-config-xml
+In this branch, it was added a type of spring conguration using xml in the _chuck-config_ file.
