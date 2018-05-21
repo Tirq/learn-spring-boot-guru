@@ -30,3 +30,7 @@ In this branch, it was added a type of spring conguration using annotation in th
 In this branch, it was added a type of spring conguration using xml in the chuck-config file.
 ## Branch 7-property-source
 In this branch, it was added one way to read a property file called _fake.properties_. 
+## Branch 8-multi-source
+In this branch, it was added a way to read properties from multi files.
+## Branch 9-recipe-app-models
+In this branch, it was added the start source of Recipe APP. Basically, it was mapped to the models, services, repositories and one controller to show recipes.
