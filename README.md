@@ -34,3 +34,5 @@ In this branch, it was added one way to read a property file called _fake.proper
 In this branch, it was added a way to read properties from multi files.
 ## Branch 9-recipe-app-models
 In this branch, it was added the start source of Recipe APP. Basically, it was mapped to the models, services, repositories and one controller to show recipes.
+## Branch 10-CSS-Bootstrap-cdn
+In this branch, it was added Bootstrap css using cdn and changing the index page to use it.
