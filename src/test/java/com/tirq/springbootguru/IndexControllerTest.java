@@ -57,8 +57,6 @@ public class IndexControllerTest {
         verify(recipeService, times(1)).findAll();
         verify(model, times(1)).addAttribute(eq("recipes"), argumentCaptor.capture());
         assertEquals(argumentCaptor.getValue().size(), 1);
-
-
     }
 
 }

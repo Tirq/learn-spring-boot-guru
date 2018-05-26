@@ -29,6 +29,9 @@ public class Ingredient extends IdEntity {
         this.recipe = recipe;
     }
 
+    public Ingredient() {
+    }
+
     public String getDescription() {
         return description;
     }
@@ -59,5 +62,27 @@ public class Ingredient extends IdEntity {
 
     public void setUnitOfMeasure(UnitOfMeasure unitOfMeasure) {
         this.unitOfMeasure = unitOfMeasure;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        Ingredient that = (Ingredient) o;
+
+        if (description != null ? !description.equals(that.description) : that.description != null) return false;
+        if (amount != null ? !amount.equals(that.amount) : that.amount != null) return false;
+        return unitOfMeasure != null ? unitOfMeasure.equals(that.unitOfMeasure) : that.unitOfMeasure == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (description != null ? description.hashCode() : 0);
+        result = 31 * result + (amount != null ? amount.hashCode() : 0);
+        result = 31 * result + (unitOfMeasure != null ? unitOfMeasure.hashCode() : 0);
+        return result;
     }
 }

@@ -4,7 +4,6 @@ import com.tirq.springbootguru.model.enumeration.Difficulty;
 
 import javax.persistence.*;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -37,6 +36,12 @@ public class Recipe extends IdEntity {
             inverseJoinColumns = @JoinColumn(name = "CATEGORY_ID"))
     private Set<Category> categories = new HashSet<>();
 
+    public Recipe() {
+    }
+
+    public Recipe(Long id) {
+        super(id);
+    }
 
     public String getDescription() {
         return description;
@@ -126,11 +131,15 @@ public class Recipe extends IdEntity {
         this.categories = categories;
     }
 
-    public Byte[] getImage() { return image; }
+    public Byte[] getImage() {
+        return image;
+    }
 
-    public void setImage(Byte[] image) { this.image = image; }
+    public void setImage(Byte[] image) {
+        this.image = image;
+    }
 
-    public Recipe addIngredient(Ingredient ingredient){
+    public Recipe addIngredient(Ingredient ingredient) {
         ingredient.setRecipe(this);
         this.ingredients.add(ingredient);
         return this;

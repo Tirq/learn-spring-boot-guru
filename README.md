@@ -36,3 +36,12 @@ In this branch, it was added a way to read properties from multi files.
 In this branch, it was added the start source of Recipe APP. Basically, it was mapped to the models, services, repositories and one controller to show recipes.
 ## Branch 10-CSS-Bootstrap-cdn
 In this branch, it was added Bootstrap css using cdn and changing the index page to use it.
+## Branch 11-Start-tests
+In this branch, it was added Some examples using tests.
+## Branch 12-Web-jars
+In this branch, it was added web-jars to Bootstrap CSS and JQuery.
+## Branch 13-Recipe-show
+In this branch, it was added a view to show the details about a recipe using TDD.
+
+
+
